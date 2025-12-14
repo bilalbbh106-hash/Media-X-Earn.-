@@ -1,0 +1,1 @@
+let b=Number(localStorage.getItem('b'))||0;balance.innerText=b.toFixed(2);function add(){b+=CONFIG.REWARD_PER_AD;localStorage.setItem('b',b);balance.innerText=b.toFixed(2);}

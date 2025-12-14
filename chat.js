@@ -1,0 +1,1 @@
+let m=JSON.parse(localStorage.getItem('chat'))||[];function r(){messages.innerHTML=m.map(x=>`<p><b>${x.u}:</b> ${x.t}</p>`).join('');}function sendMessage(){let t=msg.value;if(!t)return;m.push({u:'User',t});localStorage.setItem('chat',JSON.stringify(m));msg.value='';r();}r();

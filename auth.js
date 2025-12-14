@@ -1,0 +1,1 @@
+document.getElementById('user')&&(document.getElementById('user').innerText=localStorage.getItem('user')||'Guest');
